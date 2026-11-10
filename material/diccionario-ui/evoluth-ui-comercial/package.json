@@ -1,0 +1,39 @@
+{
+  "name": "@evoluth/ui-comercial",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./servidor/errores-pg": "./src/servidor/errores-pg.ts",
+    "./servidor/preferencias": "./src/servidor/preferencias.ts",
+    "./tokens.css": "./styles/tokens.css",
+    "./evoluth.css": "./styles/evoluth.css"
+  },
+  "sideEffects": [
+    "*.css"
+  ],
+  "peerDependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "dependencies": {
+    "pdfjs-dist": "4.4.168",
+    "mammoth": "1.8.0",
+    "exceljs": "4.4.0"
+  },
+  "optionalDependencies": {
+    "pg": "8.12.0"
+  },
+  "devDependencies": {
+    "typescript": "5.5.4",
+    "@types/react": "18.3.3",
+    "@types/react-dom": "18.3.0",
+    "@types/pg": "8.11.6",
+    "@types/node": "20.14.10"
+  },
+  "scripts": {
+    "typecheck": "tsc -p ."
+  }
+}

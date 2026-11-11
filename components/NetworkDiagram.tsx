@@ -63,16 +63,21 @@ export default function NetworkDiagram({ active }: { active: number }) {
         })}
 
         <g className="diagram-center">
-          <circle cx={center.x} cy={center.y} r="47" className="center-halo" />
+          <circle cx={center.x} cy={center.y} r="52" className="center-halo" />
           <circle
             cx={center.x}
             cy={center.y}
-            r="36"
+            r="41"
             fill="url(#diagram-center)"
           />
-          <circle cx={center.x} cy={center.y} r="36" className="center-edge" />
-          <text x={center.x} y={center.y + 4} textAnchor="middle">
-            Decisión
+          <circle cx={center.x} cy={center.y} r="41" className="center-edge" />
+          <text x={center.x} y={center.y} textAnchor="middle" className="center-label">
+            <tspan x={center.x} dy="-5">
+              Convergencia
+            </tspan>
+            <tspan x={center.x} dy="11">
+              Digital
+            </tspan>
           </text>
         </g>
 

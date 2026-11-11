@@ -334,6 +334,11 @@
   letter-spacing: 0.04em;
 }
 
+.diagram-center .center-label {
+  font-size: 8.5px;
+  letter-spacing: 0.02em;
+}
+
 .diagram-node .node-core {
   fill: #ffffff;
   stroke: #b9c7d1;

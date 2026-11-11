@@ -71,8 +71,8 @@ export default function Hero() {
           depthFade={0.9}
           spin={0.6}
           tilt={16}
-          hoverRadius={0.06}
-          hoverBoost={0.7}
+          hoverRadius={0.1}
+          hoverBoost={0.75}
           pulseSpeed={1.2}
           seed={9}
           dpr={1.8}

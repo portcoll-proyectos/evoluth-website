@@ -611,7 +611,7 @@ export function createAstralScene(
         const distanceSquared = dx * dx + dy * dy;
         if (distanceSquared < hoverSquared) {
           boost =
-            Math.pow(1 - Math.sqrt(distanceSquared) / hoverPixels, 1.6) *
+            (1 - Math.sqrt(distanceSquared) / hoverPixels) *
             options.hoverBoost;
         }
       }
@@ -632,7 +632,7 @@ export function createAstralScene(
         }
       }
 
-      if (boost > 0.12 && depth > -0.45) {
+      if (boost > 0.08 && depth > -0.45) {
         boosted.push(index);
         boostLevel.push(clamp(boost, 0, 1.4));
         continue;
@@ -727,7 +727,7 @@ export function createAstralScene(
     }
 
     if (hoverActive) {
-      const glowRadius = Math.max(24, hoverPixels);
+      const glowRadius = Math.max(28, hoverPixels);
       const pointerGlow = ctx.createRadialGradient(
         hoverX,
         hoverY,
@@ -738,11 +738,11 @@ export function createAstralScene(
       );
       pointerGlow.addColorStop(
         0,
-        rgba(highlightColor, 0.12 * Math.min(1, options.hoverBoost))
+        rgba(highlightColor, 0.14 * Math.min(1, options.hoverBoost))
       );
       pointerGlow.addColorStop(
         0.55,
-        rgba(highlightColor, 0.04 * Math.min(1, options.hoverBoost))
+        rgba(highlightColor, 0.05 * Math.min(1, options.hoverBoost))
       );
       pointerGlow.addColorStop(1, rgba(highlightColor, 0));
       ctx.globalAlpha = 1;

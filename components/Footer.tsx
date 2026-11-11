@@ -18,7 +18,7 @@ export default function Footer() {
             />
           </Link>
           <p className="footer-claim">
-            Riesgo, procesos y confianza para crecer con control.
+            Convergencia digital para crecer con control.
           </p>
           <Link href="/#contacto" className="footer-cta">
             Agenda un diagnóstico

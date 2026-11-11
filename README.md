@@ -1,6 +1,6 @@
 # Evoluth · sitio comercial
 
-Home pública de Evoluth: riesgo, procesos, seguridad de la información, protección de datos y cumplimiento. El sitio presenta los cinco frentes como una sola red de control y combina una dirección visual oscura en el hero con contenido claro en el resto del recorrido.
+Home pública de Evoluth: convergencia digital en madurez, procesos, tecnología, datos e industria. El sitio presenta los cinco ejes como una sola red de control y combina una dirección visual oscura en el hero con contenido claro en el resto del recorrido.
 
 ## Stack
 

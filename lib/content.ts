@@ -1,9 +1,9 @@
 export type ServiceIcon =
-  | "radar"
+  | "brain"
   | "workflow"
-  | "shield"
-  | "fingerprint"
-  | "scale";
+  | "cloud"
+  | "database"
+  | "handshake";
 
 export type ScenarioIcon = "calendar" | "siren" | "branch";
 
@@ -45,9 +45,9 @@ export type Note = {
 
 export const site = {
   name: "Evoluth",
-  claim: "Riesgo, procesos y confianza.",
+  claim: "Convergencia digital con criterio.",
   description:
-    "Consultoría en gestión de riesgos, procesos, seguridad de la información, protección de datos y cumplimiento. Conectamos decisiones para que tu organización crezca con control.",
+    "Consultoría en convergencia digital: madurez, procesos, tecnología, datos e industria. Conectamos decisiones para que tu organización crezca con control.",
   location: "Quito, Ecuador",
   hours: "Lunes a viernes · 08:30 a 18:00 (GMT-5)",
   coverage: "Ecuador y la región.",
@@ -62,25 +62,35 @@ export const nav = [
 ];
 
 export const heroDomains = [
-  { number: "01", label: "Riesgo", full: "Gestión de riesgos", slug: "riesgos" },
+  {
+    number: "01",
+    label: "Madurez",
+    full: "Madurez digital",
+    slug: "madurez",
+  },
   {
     number: "02",
     label: "Procesos",
-    full: "Procesos y operación",
+    full: "Convergencia de procesos",
     slug: "procesos",
   },
   {
     number: "03",
-    label: "Seguridad",
-    full: "Seguridad de la información",
-    slug: "seguridad",
+    label: "Tecnología",
+    full: "Convergencia tecnológica",
+    slug: "tecnologia",
   },
-  { number: "04", label: "Datos", full: "Protección de datos", slug: "datos" },
+  {
+    number: "04",
+    label: "Datos",
+    full: "Convergencia de datos",
+    slug: "datos",
+  },
   {
     number: "05",
-    label: "Cumplimiento",
-    full: "Cumplimiento y continuidad",
-    slug: "cumplimiento",
+    label: "Industrial",
+    full: "Convergencia industrial",
+    slug: "industrial",
   },
 ];
 
@@ -99,79 +109,84 @@ export const frameworks = [
 
 export const services: Service[] = [
   {
-    slug: "riesgos",
+    slug: "madurez",
     number: "01",
-    title: "Gestión de riesgos",
-    icon: "radar",
+    title: "Madurez digital",
+    icon: "brain",
     summary:
-      "Identificamos lo que puede detener tu operación y priorizamos lo que importa.",
+      "Desarrollamos la capacidad organizacional para liderar y adoptar el cambio digital.",
     deliverables: [
-      "Perfil de apetito de riesgo",
-      "Matriz de riesgos y controles",
-      "Indicadores tempranos",
-      "Planes de tratamiento",
+      "Estrategia digital",
+      "Liderazgo y cultura",
+      "Capacidades y talento digital",
+      "Gestión de innovación",
+      "Gobierno y gestión del cambio",
     ],
-    outcome: "Decisiones defendibles, no listas infinitas.",
+    outcome: "Una organización que lidera el cambio, no que lo padece.",
   },
   {
     slug: "procesos",
     number: "02",
-    title: "Procesos y operación",
+    title: "Convergencia de procesos",
     icon: "workflow",
     summary:
-      "Diseñamos procesos que la gente usa y mejora sin depender de heroísmos.",
+      "Integramos y optimizamos procesos para generar eficiencia y valor.",
     deliverables: [
-      "Mapa de procesos y responsables",
-      "Fichas y procedimientos",
-      "Indicadores operativos",
-      "Automatización selectiva",
+      "Estandarización",
+      "Integración entre áreas",
+      "Automatización",
+      "Flujos de trabajo digitales",
+      "Mejora continua",
     ],
-    outcome: "Menos excepciones, más previsibilidad.",
+    outcome: "Menos fricción y más capacidad de respuesta.",
   },
   {
-    slug: "seguridad",
+    slug: "tecnologia",
     number: "03",
-    title: "Seguridad de la información",
-    icon: "shield",
+    title: "Convergencia tecnológica",
+    icon: "cloud",
     summary:
-      "Protegemos la información con controles proporcionales al riesgo real.",
+      "Adoptamos e integramos tecnologías convergentes que habilitan nuevos modelos.",
     deliverables: [
-      "Diagnóstico ISO 27001",
-      "SGSI, políticas y roles",
-      "Gestión de accesos",
-      "Respuesta a incidentes",
+      "Arquitectura y plataformas integradas",
+      "Nube, IA, IoT y automatización",
+      "Ciberseguridad",
+      "Innovación tecnológica",
+      "Escalabilidad",
     ],
-    outcome: "Menos exposición y una respuesta que no se improvisa.",
+    outcome: "Tecnología que habilita el negocio, no que lo frena.",
   },
   {
     slug: "datos",
     number: "04",
-    title: "Protección de datos",
-    icon: "fingerprint",
+    title: "Convergencia de datos",
+    icon: "database",
     summary:
-      "Tratamos los datos personales como una decisión de negocio, no como un trámite.",
+      "Gestionamos los datos para decidir con evidencia y no con intuición.",
     deliverables: [
-      "Inventario de tratamientos",
-      "Base legal y avisos de privacidad",
-      "Evaluaciones de impacto",
-      "Derechos e incidentes",
+      "Gobierno de datos",
+      "Calidad e integración de datos",
+      "Analítica e inteligencia de negocios",
+      "Visualización y reporting",
+      "Decisiones basadas en datos",
     ],
-    outcome: "Cumplimiento trazable y confianza de las personas.",
+    outcome: "Decisiones trazables y evidencia disponible.",
   },
   {
-    slug: "cumplimiento",
+    slug: "industrial",
     number: "05",
-    title: "Cumplimiento y continuidad",
-    icon: "scale",
+    title: "Convergencia industrial",
+    icon: "handshake",
     summary:
-      "Preparamos a la organización para auditorías, regulación y lo inesperado.",
+      "Conectamos la organización con su ecosistema para crear valor e innovación.",
     deliverables: [
-      "Matriz de obligaciones",
-      "Auditoría interna",
-      "Plan de continuidad ISO 22301",
-      "Simulacros y comités",
+      "Ecosistemas y plataformas digitales",
+      "Alianzas estratégicas",
+      "Innovación abierta",
+      "Nuevos productos y servicios",
+      "Nuevos modelos de negocio",
     ],
-    outcome: "Menos sorpresas, más capacidad de respuesta.",
+    outcome: "Nuevos modelos de negocio con respaldo.",
   },
 ];
 
@@ -207,11 +222,11 @@ export const method: MethodStep[] = [
 ];
 
 export const dashboardDomains = [
-  { name: "Riesgos", status: "En control", tone: "ok" },
+  { name: "Madurez", status: "En control", tone: "ok" },
   { name: "Procesos", status: "En control", tone: "ok" },
-  { name: "Seguridad", status: "En revisión", tone: "warn" },
+  { name: "Tecnología", status: "En revisión", tone: "warn" },
   { name: "Datos", status: "En control", tone: "ok" },
-  { name: "Cumplimiento", status: "En revisión", tone: "warn" },
+  { name: "Industrial", status: "En revisión", tone: "warn" },
 ] as const;
 
 export const scenarios: Scenario[] = [

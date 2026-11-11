@@ -32,21 +32,22 @@ const siteUrl =
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Evoluth · Riesgo, procesos y confianza",
+    default: "Evoluth · Convergencia digital",
     template: "%s · Evoluth",
   },
   description:
-    "Consultoría en gestión de riesgos, procesos, seguridad de la información, protección de datos y cumplimiento. Conectamos decisiones para que tu organización crezca con control.",
+    "Consultoría en convergencia digital: madurez, procesos, tecnología, datos e industria. Conectamos decisiones para que tu organización crezca con control.",
   keywords: [
-    "consultoría de riesgos Ecuador",
-    "gestión de riesgos",
-    "seguridad de la información",
-    "ISO 27001",
-    "protección de datos",
-    "LOPDP",
-    "continuidad del negocio",
-    "cumplimiento",
-    "procesos",
+    "consultoría en convergencia digital Ecuador",
+    "madurez digital",
+    "transformación digital",
+    "convergencia de procesos",
+    "automatización de procesos",
+    "convergencia tecnológica",
+    "ciberseguridad",
+    "gobierno de datos",
+    "analítica de datos",
+    "convergencia industrial",
   ],
   applicationName: "Evoluth",
   authors: [{ name: "Evoluth" }],
@@ -61,7 +62,7 @@ export const metadata: Metadata = {
     siteName: "Evoluth",
     title: "Evoluth · La confianza no se improvisa. Se diseña.",
     description:
-      "Riesgo, procesos, seguridad de la información, protección de datos y cumplimiento en un solo sistema de decisiones.",
+      "Madurez digital, procesos, tecnología, datos e industria en un solo sistema de decisiones.",
     images: [
       {
         url: "/og/evoluth-og.png",
@@ -75,7 +76,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Evoluth · La confianza no se improvisa. Se diseña.",
     description:
-      "Riesgo, procesos, seguridad de la información, protección de datos y cumplimiento en un solo sistema de decisiones.",
+      "Madurez digital, procesos, tecnología, datos e industria en un solo sistema de decisiones.",
     images: ["/og/evoluth-og.png"],
   },
   robots: {

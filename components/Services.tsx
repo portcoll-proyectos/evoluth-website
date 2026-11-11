@@ -4,11 +4,11 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import {
   ArrowUpRight,
-  Fingerprint,
+  BrainCircuit,
+  Cloud,
+  Database,
+  Handshake,
   Plus,
-  Radar,
-  Scale,
-  ShieldCheck,
   Workflow,
 } from "lucide-react";
 import { services } from "@/lib/content";
@@ -16,11 +16,11 @@ import NetworkDiagram from "./NetworkDiagram";
 import SectionHead from "./SectionHead";
 
 const serviceIcons = {
-  radar: Radar,
+  brain: BrainCircuit,
   workflow: Workflow,
-  shield: ShieldCheck,
-  fingerprint: Fingerprint,
-  scale: Scale,
+  cloud: Cloud,
+  database: Database,
+  handshake: Handshake,
 };
 
 export default function Services() {
@@ -55,11 +55,11 @@ export default function Services() {
 
         <div className="services-heading">
           <h2 data-reveal>
-            Cinco frentes.
+            Cinco ejes.
             <span> Una sola red de control.</span>
           </h2>
           <p data-reveal>
-            Trabajamos los cinco dominios como un sistema, no como proyectos
+            Trabajamos los cinco ejes como un sistema, no como proyectos
             aislados.
           </p>
         </div>
@@ -128,7 +128,7 @@ export default function Services() {
                           <p>{service.outcome}</p>
                         </div>
                         <Link className="text-link" href="#contacto">
-                          Hablemos de este frente
+                          Hablemos de este eje
                           <ArrowUpRight
                             size={16}
                             strokeWidth={2}

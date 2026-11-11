@@ -59,7 +59,7 @@ const steps = [
   {
     number: "03",
     title: "Recibes prioridades",
-    body: "Tres frentes y una ruta inicial.",
+    body: "Tres ejes y una ruta inicial.",
   },
 ];
 

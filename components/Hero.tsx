@@ -83,7 +83,7 @@ export default function Hero() {
         <div className="hero-layout">
           <div className="hero-copy" ref={copyRef}>
             <p className="hero-kicker">
-              Consultoría en riesgo y confianza
+              Consultoría en convergencia digital
             </p>
 
             <h1 className="hero-title">
@@ -99,8 +99,8 @@ export default function Hero() {
             </h1>
 
             <p className="hero-sub">
-              Conectamos riesgo, procesos, seguridad, datos y cumplimiento en un
-              solo sistema de decisiones.
+              Conectamos madurez digital, procesos, tecnología, datos e
+              industria en un solo sistema de decisiones.
             </p>
 
             <div className="hero-actions">
@@ -123,8 +123,8 @@ export default function Hero() {
 
       <div className="hero-foot" ref={footRef}>
         <div className="container hero-foot-inner">
-          <span className="hero-foot-label">Dominios de trabajo</span>
-          <nav className="hero-domains" aria-label="Dominios de trabajo">
+          <span className="hero-foot-label">Ejes de trabajo</span>
+          <nav className="hero-domains" aria-label="Ejes de trabajo">
             {heroDomains.map((domain) => (
               <Link
                 key={domain.slug}

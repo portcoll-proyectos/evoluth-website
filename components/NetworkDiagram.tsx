@@ -96,7 +96,7 @@ export default function NetworkDiagram({ active }: { active: number }) {
 
       <div className="diagram-caption">
         <span className="diagram-caption-title">
-          {active >= 0 ? services[active].title : "Cinco dominios"}
+          {active >= 0 ? services[active].title : "Cinco ejes"}
         </span>
         <span className="diagram-caption-meta">Red Evoluth</span>
       </div>

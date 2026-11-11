@@ -3,7 +3,7 @@
 Uso:
     python scripts/create-og.py
 
-Requiere Pillow y numpy. La tipografÃ­a se descarga una vez en
+Requiere Pillow y numpy. La tipografía se descarga una vez en
 assets/fonts/Montserrat-Variable.ttf para que el resultado sea reproducible.
 """
 
@@ -61,7 +61,7 @@ def build():
 
     image = Image.new("RGB", (W, H), NAVY)
 
-    # RetÃ­cula tÃ©cnica.
+    # Retícula técnica.
     grid = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     draw = ImageDraw.Draw(grid)
     for x in range(0, W, 60):
@@ -102,11 +102,11 @@ def build():
     )
     image.alpha_composite(wordmark, (76, 58))
 
-    # AntetÃ­tulo.
+    # Antetítulo.
     eyebrow_font = load_font(13, 600)
     draw.text(
         (78, 122),
-        "RIESGO  Â·  PROCESOS  Â·  SEGURIDAD  Â·  DATOS  Â·  CUMPLIMIENTO",
+        "MADUREZ  ·  PROCESOS  ·  TECNOLOGÍA  ·  DATOS  ·  INDUSTRIA",
         font=eyebrow_font,
         fill=TEAL_SOFT,
     )
@@ -115,7 +115,7 @@ def build():
     lines = [
         ("La confianza", WHITE),
         ("no se improvisa.", WHITE),
-        ("Se diseÃ±a.", TEAL),
+        ("Se diseña.", TEAL),
     ]
     title_size = 74
     title_font = load_font(title_size, 600)
@@ -124,22 +124,22 @@ def build():
         draw.text((74, y), text, font=title_font, fill=color, spacing=0)
         y += 86
 
-    # LÃ­nea de acento.
+    # Línea de acento.
     draw.rectangle([(78, 468), (78 + 68, 470)], fill=(59, 167, 160))
 
     # Bajada.
     sub_font = fit_font(
-        "ConsultorÃ­a en riesgo, procesos, seguridad de la informaciÃ³n,", 560, 18, 400
+        "Consultoría en convergencia digital: madurez, procesos,", 560, 18, 400
     )
     draw.text(
         (78, 492),
-        "ConsultorÃ­a en riesgo, procesos, seguridad de la informaciÃ³n,",
+        "Consultoría en convergencia digital: madurez, procesos,",
         font=sub_font,
         fill=MUTED,
     )
     draw.text(
         (78, 518),
-        "protecciÃ³n de datos y cumplimiento.",
+        "tecnología, datos e industria.",
         font=sub_font,
         fill=MUTED,
     )
@@ -150,7 +150,7 @@ def build():
     draw.text((930, 576), "Quito, Ecuador", font=load_font(12, 400), fill=MUTED)
 
     image.convert("RGB").save(OUT, "PNG", optimize=True)
-    print(f"Imagen generada: {OUT.relative_to(ROOT)} Â· {W}Ã—{H}")
+    print(f"Imagen generada: {OUT.relative_to(ROOT)} · {W}×{H}")
 
 
 if __name__ == "__main__":
